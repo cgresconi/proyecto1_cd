@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta description="web proyecto 1 curso front end codigo pa lante">
+    <meta description="esta web esta definida por la dev tool representada">
+    <meta description="por el celular galaxy s20 ultra">
     <meta author="Cesare Desiderati">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,73 +11,73 @@
     <title>Cesare Desiderati</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/f5c3f7539d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- ENCABEZADO -->
     <header>
-        <div id="bx_encabezado"  class="div_flex">
+        <!-- barra de navegacion -->
+        <nav id="bx_encabezado" class="div_flex">
             <img id="lg_personal" src="img/retail + banca + industria.jpg" alt="logo personal" >
             <a href="#sc_datosPersonales" id="bx_inicio" class="ft_latoBold">Inicio</a>
             <a href="#sc_contacto" id="bx_contacto" class="ft_latoBold">Contacto</a>
-        </div>
+        </nav>
     </header>
 
     <main>
         <!-- SECCION DATOS PERSONALES -->
-        <section>
+        <section id="sc_datosPersonales" class="div_flex">
             <img id="ig_foto" src="img/avatar cd.jpg" alt="foto personal">
             
             <h1 id="tx_titPrincipal" class="ft_latoBold">Cesare Desiderati</h1>
-                <p id="bx_datospersonales">Muchos años en el área del testing en Retail, Banca e Industria, usando mis conocimientos 
-                para encajarlos en las nuevas tecnologías: Jira, Cypress, Selenium, Azure DEVOPS y TestRail, 
-                testing con el sistema de Practia Global.
-                </p>
-                <div id="bx_datospersonales">Hice estos cursos para tomar experiencia:
-                    <ul>
-                        <div><li>- "API Testing con POSTMAN: QA y automatizacion paso a paso"</li></div>
-                        <div><li>- "Programa básico multidisciplinario de formación en datos e Inteligencia Artificial"</li></div>
-                        <div><li>- "Introducción a Testing y Calidad de Software"</li></div>
-                    </ul>
-                </div>
-
-                <a class="boton" href="download/CV D Cesare Desiderati Informática testing.docx" download>Descargar mi CV</a>
+            <p class="tx_datosPersonales1">Muchos años en el área del testing en Retail, Banca e Industria, usando mis conocimientos 
+            para encajarlos en las nuevas tecnologías: Jira, Cypress, Selenium, Azure DEVOPS y TestRail, 
+            testing con el sistema de Practia Global.
+            </p>
+            <p class="tx_datosPersonales2">Hice estos cursos para tomar experiencia:
+                <ul>
+                    <li class="tx_datosPersonales1">- API Testing con POSTMAN: QA y automatizacion paso a paso</li>
+                    <li class="tx_datosPersonales1">- Programa básico multidisciplinario de formación en datos e Inteligencia Artificial</li>
+                    <li class="tx_datosPersonales1" id="tx_ultimoDatoPersonal">- Introducción a Testing y Calidad de Software</li>
+                </ul>
+            </p>
+            <a id="bt_descargaCv" href="download/CV D Cesare Desiderati Informática testing.docx" download>Descargar mi CV</a>
         </section>
 
         <!-- SECCION CONTACTO -->
-        <section>
-            <div id="bx_secContacto">
+        <section id="sc_contacto">
+            <div id="bx_secContacto" class="div_flex">
                 <h2 id="tx_titSecundario" class="ft_latoBold">Si estas interesado...
                 </h2>
-                    <p class="bx_txtContacto">en que te pueda ayudar a mejorar la calidad 
-                        de tu software en la parte de front-end y comunicacion con el 
-                        back-end (API) aprovechando la experiencia vivida en diferentes
-                        ambientes de mercados verticales y horizontales.
-                    </p>
-                    <p class="bx_txtContacto"> CONTACTAME! 
-                        Todos mis datos estan aqui abajo. Gracias por tu interes
-                    </p>
+                <p class="bx_txtContacto">en que te pueda ayudar a mejorar la calidad 
+                    de tu software en la parte de front-end y comunicacion con el 
+                    back-end (API) aprovechando la experiencia vivida en diferentes
+                    ambientes de mercados verticales y horizontales.
+                </p>
+                <p id="tm_ultTxtContacto"> CONTACTAME! 
+                    Todos mis datos estan aqui abajo. Gracias por tu interes
+                </p>
             </div>
             <div id="bx_redesSociales" class="div_flex">
                 <!-- enlace mailto -->
-                <a href="mailto:cgdesiderati@yahoo.com?correo%20de%20Cesare">
-                    <img class="bt_redesSociales" src="img/mail_awesome.svg" alt="logo_correo">
+                <a href="mailto:cgdesiderati@yahoo.com?correo%20de%20Cesare" id="cl_iconoMail" class="tm_iconoRedSocial">
+                    <span class="fa-regular fa-paper-plane fa-lg"></span>
                 </a>
                 <!-- enlace con este proyecto en github -->
-                <a href="https://cgresconi.github.io/proyecto1_cd/" target="_blank">
-                    <img class="bt_redesSociales" src="img/github_awesome.svg" alt="logo_correo">
+                <a href="https://cgresconi.github.io/proyecto1_cd/" id="cl_iconoGithub" class="tm_iconoRedSocial" target="_blank">
+                    <span class="fa-brands fa-github fa-lg"></span>
                 </a>
                 <!-- enlace con mi directorio en linkedin -->
-                <a href="https://www.linkedin.com/in/cv-cesare-desiderati/" target="_blank">
-                    <img id="bt_redesSocialesUltima" src="img/linkedin_awesome.svg" alt="logo_linkedin">
+                <a href="https://www.linkedin.com/in/cv-cesare-desiderati/" id="cl_iconoLinkedin" class="tm_iconoRedSocial" target="_blank">
+                    <span class="fa-brands fa-linkedin fa-lg"></span>
                 </a>
             </div>
-
-
         </section>
 
         <!-- FOOTER  -->
-        <footer id="bx_footer">
+        <footer id="bx_footer" class="div_flex">
             <h2 id="tx_footer">Código Latam</h2>
         </footer> 
 

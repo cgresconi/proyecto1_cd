@@ -1,137 +1,147 @@
 /* GENERAL */
-/* FONTS */
-/* google font lato */
+/* fonts: google font lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 /* font-weight para regular 400 y font-weight para bold 700 */
 .ft_latoBold {
     font-weight: 700;
 }
-
-/* RESET */
-* {
-    box-sizing: border-box;
+* { /* reset valores default navegador*/
+    box-sizing: border-box;     /* une las capas de los boxes */
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    /* Para que el scrolleo en la one page sea suave */
     background-color: #fbfbfb;
     font-size: 18px;
+    font-family: 'Lato', sans-serif;
     line-height: 1.2;
 }
-
-/* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
+ul { /* lista no ordenada para texto de contacto */
+    list-style: none;   /* listas desordenadas sin los puntos */
 }
-
-
-main {
+main { /* se justifica solo */
     max-width: 1200px;
     margin: auto;
 }
+a { /* enlaces heredan el color de texto y no tengan subrayado */
+    text-decoration: none;
+    color: inherit;
+}
 
 /* ENCABEZADO */
-.div_flex {
+.div_flex { /* contenedor flexible */
     display: flex;
 }
-#bx_encabezado {
+#bx_encabezado { /* box para encabezado */
     height: 90px;
-    /* border: 1px solid black; */
     margin-bottom: 40px;
-    box-shadow: 0px 10px 10px 5px gainsboro;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 0px 10px 10px 5px gainsboro; /* efcto de redondeo de borde */
+    justify-content: space-between; /* ordenamiento flexible eje principal*/
+    align-items: center; /* ordenamiento flexible eje secundario*/
 }
-#lg_personal {
+#lg_personal { /* logo personal encabezado */
     width: 140px;
     height: 75px;
     margin: 10px 0px 0px 20px;
 }
-/* ENLACES */
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-#bx_inicio {
+.ft_anclas { /* tamaño fuente de anclas */
     font-size: 20px;
 }
-#bx_contacto {
+#bx_contacto { /* box ancla contacto */
     margin-right: 30px;
-    font-size: 20px;
 }
 
 /* DATOS PERSONALES */
-#ig_foto {
-    margin-left: 20px;
+#sc_datosPersonales { /* seccion datos personales */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ig_foto { /* imagen foto personal */
+    margin-bottom: 28px;
     border-radius: 200px;
 }
-#tx_titPrincipal {
+#tx_titPrincipal { /* texto titulo principal */
     font-size: 36px;
-    margin: 30px 50px 20px;
+    margin-bottom: 28px;
 }
-#bx_datospersonales {
-    /* border: 1px solid black; */
+.tx_datosPersonales1 { /* texto datos personales 1 */
     text-align: center;
-    margin: 20px;
+    margin: 0px 20px;
 }
-.boton {
-    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-    padding: 5px 20px; /*espacio alrededor texto*/
-    background-color: #af599e; /*color botón*/
-    color: #fbfbfb; /*color texto*/
-    border-radius: 20px; /*bordes redondos*/
+.tx_datosPersonales2 { /* texto datos personales 2 */
+    text-align: center;
+    margin: 20px 20px 0px;
+}
+#tx_ultimoDatoPersonal { /*ultimo texto de datos personales */
+    margin-bottom: 25px;
+}
+#bt_descargaCv { /* boton descarga de cv */
+    border: 1px solid #2e518b; 
+    border-radius: 25px; 
+    padding: 13px 35px;
+    background-color: #af599e; 
+    color: #fbfbfb; 
     font-size: 20px;
-    margin: 90px 0px 200px 120px;
 }
 
 /* SECCION CONTACTO */
-#bx_secContacto {
-    margin: 220px 20px 60px;
+#bx_secContacto { /* box seccion de contacto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 220px 20px 40px;
     background-color: rgb(175, 89, 158, 0.3);
     border: 1px solid rgba(175, 89, 158, 0.3);
-    padding: 25px 30px; 
     border-radius: 20px;
-    height: 350px;
+    height: 320px;
 }
-#tx_titSecundario {
+#tx_titSecundario { /*texto titulo secundario */
     font-size: 28px;
     background-color: rgb(175, 89, 158, 0);
     color: #0f0f0f;
-    padding-left: 20px;
+    margin-top: 40px;
 }
-.bx_txtContacto {
+.bx_txtContacto { /* box texto de contacto */
     text-align: center;
     background-color: rgb(175, 89, 158, 0);
     color: #0f0f0f;
-    margin: 20px;
+    margin: 20px 20px 0px
 }
-.bt_redesSociales {
-    height: 75px;
-    width: 75px;
+#tm_ultTxtContacto { /* ultimo texto de contacto */
+    text-align: center;
+    background-color: rgb(175, 89, 158, 0);
+    color: #0f0f0f;
+    margin: 20px 20px 70px;
 }
-#bt_redesSocialesUltima {
-    height: 75px;
-    width: 75px;
-    /* margin-bottom: 300px; */
-}
-#bx_redesSociales {
+#bx_redesSociales { /* box redes sociales */
+    flex-direction: row;
     height: 90px;
-    /* border: 1px solid black; */
+    margin-bottom: 100px;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 100px;
 }
+.tm_iconoRedSocial { /* tamaño icono red social*/
+    font-size: 60px;
+}
+#cl_iconoMail { /* color icono mail */
+    color: hwb(63 22% 19%);
+}
+#cl_iconoGithub { /* color icono github */
+    color:black;
+}
+#cl_iconoLinkedin { /* color icono linkedin */
+    color:blue;
+}
+
 /* SECCION FOOTER */
-#bx_footer {
+#bx_footer { /* box footer */
     height: 90px;
-    border: 1px solid black;
     background-color: #af599e;
+    justify-content: center;
+    align-items: center;
 }
-#tx_footer {
+#tx_footer { /* texto footer */
     color: #fbfbfb;
     background-color: #af599e;
     text-align: center;
-    padding-top: 25px;
 }
