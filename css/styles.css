@@ -37,6 +37,11 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     box-shadow: 0px 10px 10px 5px gainsboro; /* efcto de redondeo de borde */
     justify-content: space-between; /* ordenamiento flexible eje principal*/
     align-items: center; /* ordenamiento flexible eje secundario*/
+    /* parametros generales para fijar el encabezado */
+    width: 100%; /* para que el encabezado ocupe todo el ancho */
+	left: 0; /* posiciona el encabezado en el extremo izquierdo de la pantalla */
+	top: 0; /* posiciona el encabezado en la parte mas alta de la pantalla */
+	position: fixed; /* fijar el encabezado */
 }
 #lg_personal { /* logo personal encabezado */
     width: 140px;
@@ -55,6 +60,8 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 130px;   
+    /* permite que el contenido baje del espacio del encabezado fijo */
 }
 #ig_foto { /* imagen foto personal */
     margin-bottom: 28px;
