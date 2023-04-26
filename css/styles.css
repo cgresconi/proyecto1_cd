@@ -5,6 +5,9 @@
 .ft_latoBold {
     font-weight: 700;
 }
+html {
+    scroll-padding-top: 130px; /* height of sticky header */
+}
 * { /* reset valores default navegador*/
     box-sizing: border-box;     /* une las capas de los boxes */
     margin: 0;
@@ -26,6 +29,15 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     text-decoration: none;
     color: inherit;
 }
+body {
+    scroll-margin-top: 130px;
+}
+/* :hd_relleno::before {
+    content: "";
+    display: block;
+    height: 60px; /* fixed header height 
+    margin: -60px 0 0; /* negative fixed header height 
+} */
 
 /* ENCABEZADO */
 .div_flex { /* contenedor flexible */
@@ -39,9 +51,9 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     align-items: center; /* ordenamiento flexible eje secundario*/
     /* parametros generales para fijar el encabezado */
     width: 100%; /* para que el encabezado ocupe todo el ancho */
-	left: 0; /* posiciona el encabezado en el extremo izquierdo de la pantalla */
-	top: 0; /* posiciona el encabezado en la parte mas alta de la pantalla */
-	position: fixed; /* fijar el encabezado */
+    left: 0; /* posiciona el encabezado en el extremo izquierdo de la pantalla */
+    top: 0; /* posiciona el encabezado en la parte mas alta de la pantalla */
+    position: fixed; /* fijar el encabezado */
 }
 #lg_personal { /* logo personal encabezado */
     width: 140px;
@@ -60,11 +72,11 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;   
-    /* permite que el contenido baje del espacio del encabezado fijo */
 }
 #ig_foto { /* imagen foto personal */
     margin-bottom: 28px;
+    margin-top: 130px;
+    /* permite que el contenido baje del espacio del encabezado fijo */
     border-radius: 200px;
 }
 #tx_titPrincipal { /* texto titulo principal */
@@ -73,34 +85,41 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
 }
 .tx_datosPersonales1 { /* texto datos personales 1 */
     text-align: center;
-    margin: 0px 20px;
+    /* margin: 0px 20px;    absoluto */
+    margin: 0px 5%;
 }
 .tx_datosPersonales2 { /* texto datos personales 2 */
     text-align: center;
-    margin: 20px 20px 0px;
+    /* margin: 20px 20px 0px;    absoluto  */
+    margin: 20px 10% 0px;
 }
 #tx_ultimoDatoPersonal { /*ultimo texto de datos personales */
     margin-bottom: 25px;
 }
 #bt_descargaCv { /* boton descarga de cv */
-    border: 1px solid #2e518b; 
-    border-radius: 25px; 
-    padding: 13px 35px;
+    /* border: 1px solid #2e518b;  */
+    border-radius: 30px; 
+    /* padding: 13px 35px;   absoluto */
+    padding: 18px 5%;
     background-color: #af599e; 
     color: #fbfbfb; 
     font-size: 20px;
 }
 
 /* SECCION CONTACTO */
+/* #sc_contacto {
+    padding: 1px;
+} */
 #bx_secContacto { /* box seccion de contacto */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 220px 20px 40px;
+    /* margin: 220px 20px 40px;   absoluto */
+    margin: 220px 5% 40px;
     background-color: rgb(175, 89, 158, 0.3);
     border: 1px solid rgba(175, 89, 158, 0.3);
     border-radius: 20px;
-    height: 320px;
+    height: 300px;
 }
 #tx_titSecundario { /*texto titulo secundario */
     font-size: 28px;
@@ -112,13 +131,15 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     text-align: center;
     background-color: rgb(175, 89, 158, 0);
     color: #0f0f0f;
-    margin: 20px 20px 0px
+    /* margin: 20px 20px 0px  absoluto */
+    margin: 20px 8% 0px;
 }
 #tm_ultTxtContacto { /* ultimo texto de contacto */
     text-align: center;
     background-color: rgb(175, 89, 158, 0);
     color: #0f0f0f;
-    margin: 20px 20px 70px;
+    /* margin: 20px 20px 70px;  absoluto */
+    margin: 20px 8% 70px;
 }
 #bx_redesSociales { /* box redes sociales */
     flex-direction: row;
