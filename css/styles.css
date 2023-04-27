@@ -6,13 +6,14 @@
     font-weight: 700;
 }
 html {
-    scroll-padding-top: 130px; /* height of sticky header */
+    scroll-padding-top: 130px;
+    /* permite descontar la altura del encabezado fijo - parte 1 */
 }
 * { /* reset valores default navegador*/
     box-sizing: border-box;     /* une las capas de los boxes */
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;    /* Para que el scrolleo de la pagina sea suave */
     background-color: #fbfbfb;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
@@ -29,15 +30,6 @@ a { /* enlaces heredan el color de texto y no tengan subrayado */
     text-decoration: none;
     color: inherit;
 }
-body {
-    scroll-margin-top: 130px;
-}
-/* :hd_relleno::before {
-    content: "";
-    display: block;
-    height: 60px; /* fixed header height 
-    margin: -60px 0 0; /* negative fixed header height 
-} */
 
 /* ENCABEZADO */
 .div_flex { /* contenedor flexible */
@@ -76,7 +68,7 @@ body {
 #ig_foto { /* imagen foto personal */
     margin-bottom: 28px;
     margin-top: 130px;
-    /* permite que el contenido baje del espacio del encabezado fijo */
+    /* permite descontar la altura del encabezado fijo - parte 2*/
     border-radius: 200px;
 }
 #tx_titPrincipal { /* texto titulo principal */
@@ -107,9 +99,6 @@ body {
 }
 
 /* SECCION CONTACTO */
-/* #sc_contacto {
-    padding: 1px;
-} */
 #bx_secContacto { /* box seccion de contacto */
     flex-direction: column;
     justify-content: center;
